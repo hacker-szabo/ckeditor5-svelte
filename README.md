@@ -26,7 +26,7 @@ npm install
 #### Install ckeditor5-svelte package
 
 ```bash
-npm i ckeditor5-svelte
+npm i hacker-szabo/ckeditor5-svelte
 ```
 
 #### Install DocumentEditor build of ckeditor
