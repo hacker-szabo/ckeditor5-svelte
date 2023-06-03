@@ -6,7 +6,7 @@ Below are the set of instructions to create svelte project, install component an
 ### How to install package
 
 ```bash
-$ npm i ckeditor5-svelte
+$ npm i hacker-szabo/ckeditor5-svelte
 ```
 
 ### Getting started
