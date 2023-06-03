@@ -2,6 +2,13 @@
   import { onMount, onDestroy, createEventDispatcher } from "svelte";
   import debounce from "just-debounce-it";
 
+  const randomID = () => {
+    const randomNumber = Math.floor(Math.random() * 1e16).toString();
+    return `_editor${randomNumber}`;
+  };
+
+  const randomGeneratedID = randomID();
+
   // Properties
   export let editor = null;
   export let value = "";
@@ -32,7 +39,7 @@
       });
     }
     // Get dom element to mount initialised editor instance
-    editorElement = document.getElementById("_editor");
+    editorElement = document.getElementById(randomGeneratedID);
     editor
       .create(editorElement, config)
       .then(editor => {
@@ -87,4 +94,4 @@
   }
 </script>
 
-<div id="_editor" />
+<div id={randomGeneratedID} />
